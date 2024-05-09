@@ -6,6 +6,16 @@ describe('ModalAlertComponent', () => {
   let component: ModalAlertComponent;
   let fixture: ComponentFixture<ModalAlertComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ModalAlertComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(ModalAlertComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
